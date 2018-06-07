@@ -57,7 +57,7 @@ document.write(img);*/
         <h1>Resize Images</h1>
         Select Image: <input type="file" onChange={this.fileHandler.bind(this)} accept="image/*"/>
         <br /><br />
-        Enter Width: <input type="text" value={this.state.width} Placeholder="Enter Width here" onChange={e => {this.setState({width: e.target.value})}} /> px
+        Enter Width: <input type="number" value={this.state.width} Placeholder="Enter Width here" onChange={e => {this.setState({width: Number(e.target.value)})}} /> px
         <br /><br />
         <button onClick={this.downloadImage}>Download</button>
         <br /><br />
